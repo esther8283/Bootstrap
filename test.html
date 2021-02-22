@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 부트스트랩은 모바일환경 친화적임으로 viewport 설정이 반드시 필요함 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 부트스트랩은 트위터에서 만든 UI 프레임워크 -->
+    <!-- 부트스트랩4는 jquery와 CSS를 조합해서 미리 디자인된 태그를 제공함 -->
+    <!-- 부트스트랩은 class 속성에 미리 지정된 클래스명을 입력하여 사용함 -->
+
+    <!-- 부트스트랩4 사용 시 필요한 파일은 bootstrap.css, jquery.js, bootstrap.js -->
+    <!-- 옵션으로 popper.js 를 사용함 -->
+
+    <!-- 파일 로드 순서는 1. bootstrap.css, 2. jquery.js, 3. popper.js, 4. bootstrap.js -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <style>
+    </style>
+</head> 
+<body>
+    <h1>부트스트랩 테스트</h1>
+    <h1 class="display-1">부트스트랩 테스트</h1>
+
+    <!--  -->
+    <div class="container bg-secondary" style="height: 200px;"></div>
+    <br>
+    <div class="container-fluid bg-secondary" style="height: 200px;"></div>
+
+    <!-- grid system. -->
+    <!-- 그리드 시스템은 화면은 미리 12등분으로 분활하여 화면을 디자인하는 방식 -->
+    <br>
+
+    <div class="container-fluid">
+        <div class="row text-center">
+            <div class="col-sm-12 bg-primary" >12</div>
+        </div>
+        <br>
+        <div class="row text-center">
+            <div class="col-sm-6 bg-secondary">6</div>
+            <div class="col-sm-6 bg-success">6</div>
+        </div>
+    </div>
+</body>
+</html>
