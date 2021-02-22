@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+  <!-- 문제 1> grid3.html 파일을 참고하여 사이드바 메뉴와 메인 컨텐츠 사이의 거리를 grid 크기 1만큼 빈공간이 존재하는 사이트 layout을 작성하세요 -->
+  <div class="container">
+    <header class="text-center">
+      <h2>그리드 시스템을 이용한 레이아웃</h2>
+    </header>
+    <!-- grid 시스템 사용 -->
+    <!-- row를 사용하여 라인 생성 -->
+    <main class="row">
+      <!-- col-md-2 를 사용하여 사이드바의 크기를 grid 크기 2만큼 사용 -->
+      <div class="col-md-2">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a href="#" class="nav-link">메뉴 1</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">메뉴 2</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">메뉴 3</a>
+          </li>
+        </ul>
+      </div>
+      <!-- col-md-9을 사용 메인 컨텐츠의 크기를 grid 크기 9만큼 사용 -->
+      <!-- offset-md-1 을 사용하여 grid 크기 1만큼의 빈공간을 설정 -->
+      <div class="col-md-9 offset-md-1">
+        <p>공개하지 아니한 회의내용의 공표에 관하여는 법률이 정하는 바에 의한다. 이 헌법시행 당시의 대법원장과 대법원판사가 아닌 법관은 제1항 단서의 규정에 불구하고 이 헌법에 의하여 임명된 것으로 본다.</p>
+
+        <p>대법관의 임기는 6년으로 하며, 법률이 정하는 바에 의하여 연임할 수 있다. 모든 국민은 직업선택의 자유를 가진다. 제1항의 탄핵소추는 국회재적의원 3분의 1 이상의 발의가 있어야 하며, 그 의결은 국회재적의원 과반수의 찬성이 있어야 한다. 다만, 대통령에 대한 탄핵소추는 국회재적의원 과반수의 발의와 국회재적의원 3분의 2 이상의 찬성이 있어야 한다.</p>
+      </div>
+    </main>
+    <footer class="text-center">
+      <p>여기는 푸터가 들어가는 곳</p>
+    </footer>
+  </div>
+
+  
+
+</body>
+</html>
