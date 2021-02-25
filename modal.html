@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>modal</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <script src="./js/jquery-3.5.1.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h3>모달창</h3>
+        <!-- 모달창은 현재 페이지 상단에 표시되는 팝업창 -->
+        <!-- 현재 페이지에서 평상시에는 숨겨져 있다가 이벤트 발생시 화면에 표시하는 방식 -->
+        <!-- div 태그에 modal 클래스를 추가하고, id도 선언하여 사용 -->
+        <!-- 주로 button에 사용자속성 data-toggle="modal", data-target="모달영역 id값"을 선언하여 사용함 -->
+        <!-- modal을 사용한 태그의 자식 태그로 modal-dialog 클래스를 사용한 div 태그가 존재하며, 그 아래에 modal-content 클래스를 사용한 div 태그가 존재함 -->
+        <!-- modal-content는 modal-header, modal-body, modal-footer 클래스를 사용한 div태그를 가지고 있음 -->
+        <!-- modal 클래스에 fade 클래스를 추가하면 애니메이션 효과가 발생함 -->
+        <!-- modal-dialog 뒤에 modal-sm, modal-lg, modal-xl 클래스를 추가하면 모달창의 크기를 변경할 수 있음 -->
+        <!-- modal-dialog 뒤에 modal-dialog-centered를 사용하면 화면 정중앙에 출력되는 모달창을 사용할 수 있음 -->
+        <!-- modal-dialog 뒤에 modal-dialog-scrollable를 사용하면 모달창보다 컨텐츠의 크기가 클 경우 스크롤바가 생성되어 스크롤을 사용할 수 있음 -->
+
+        <div>
+            <h3>기본 모달창</h3>
+            <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#modal1">모달창 열기</button>
+            <div class="modal fade" id="modal1">
+                <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">모달창 헤더 영역</h4>
+                            <button class="close" type="button" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <h4>모달창 바디 영역</h4>
+                        </div>
+                        <div class="modal-footer">
+                        <button class="btn btn-danger" type="button" data-dismiss="modal">닫기</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        
+        <hr>
+
+        <div>
+            <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#modal2">모달창 열기</button>
+            <div class="modal fade" id="modal2">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4>정중앙에 표시되는 모달창</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                        모달창 화면에 출력
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <br>
+
+        <div>
+            <h3>스크롤이 없는 모달창</h3>
+            <button class="btn btn-primary" data-toggle="modal" data-target="#modal3">스크롤이 없는 모달창 열기</button>
+            <div class="modal" id="modal3">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title">스크롤 없는 모달창</h1>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                            <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+                            <p>Vivamus vitae lobortis purus. In faucibus eros sem, ac scelerisque nisl sodales at. Cras id tellus mollis, fermentum velit non, dignissim odio. Quisque convallis iaculis dui, nec tempus nunc eleifend quis. Pellentesque mattis laoreet odio id pulvinar. Maecenas laoreet volutpat velit, sit amet dictum dolor. Nam tristique urna sed est placerat, id pharetra magna blandit. Donec bibendum lacinia elit, eu malesuada dolor ultricies a. Quisque placerat eu nulla non commodo. Suspendisse convallis, massa id eleifend egestas, ante ligula blandit urna, ac pellentesque augue tortor in orci.Nam consequat ullamcorper justo, dapibus ullamcorper nisl hendrerit a. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris non velit vel odio venenatis ornare non non massa. Nullam placerat, massa posuere feugiat dapibus, erat nisl convallis tortor, iaculis interdum purus erat dignissim orci. Nullam pharetra nisl eu ex aliquet iaculis. Aliquam blandit faucibus tortor ut pretium. Maecenas bibendum urna placerat, eleifend est non, consectetur justo. Praesent iaculis libero nec hendrerit iaculis. Aliquam erat volutpat. Suspendisse potenti. Donec congue mollis pulvinar. Nunc ac bibendum elit, at pellentesque nibh. Ut in purus vitae nisl viverra vestibulum sed ut est. Morbi sed nisl tortor. Nunc ac enim ipsum.</p>
+                        </div>
+                        <div class="modal-footer">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <h3>스크롤이 있는 모달창</h3>
+            <button class="btn btn-primary" data-toggle="modal" data-target="#modal4">스크롤이 있는 모달창 열기</button>
+            <div class="modal" id="modal4">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title">스크롤 있는 모달창</h1>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                            <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+                            <p>Vivamus vitae lobortis purus. In faucibus eros sem, ac scelerisque nisl sodales at. Cras id tellus mollis, fermentum velit non, dignissim odio. Quisque convallis iaculis dui, nec tempus nunc eleifend quis. Pellentesque mattis laoreet odio id pulvinar. Maecenas laoreet volutpat velit, sit amet dictum dolor. Nam tristique urna sed est placerat, id pharetra magna blandit. Donec bibendum lacinia elit, eu malesuada dolor ultricies a. Quisque placerat eu nulla non commodo. Suspendisse convallis, massa id eleifend egestas, ante ligula blandit urna, ac pellentesque augue tortor in orci.Nam consequat ullamcorper justo, dapibus ullamcorper nisl hendrerit a. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris non velit vel odio venenatis ornare non non massa. Nullam placerat, massa posuere feugiat dapibus, erat nisl convallis tortor, iaculis interdum purus erat dignissim orci. Nullam pharetra nisl eu ex aliquet iaculis. Aliquam blandit faucibus tortor ut pretium. Maecenas bibendum urna placerat, eleifend est non, consectetur justo. Praesent iaculis libero nec hendrerit iaculis. Aliquam erat volutpat. Suspendisse potenti. Donec congue mollis pulvinar. Nunc ac bibendum elit, at pellentesque nibh. Ut in purus vitae nisl viverra vestibulum sed ut est. Morbi sed nisl tortor. Nunc ac enim ipsum.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="close" >닫기</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    
+</body>
+</html>
