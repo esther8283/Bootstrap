@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI 7</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <script src="./js/jquery-3.5.1.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    
+    <style>
+       #b-box {
+            height: 900px;
+        }
+        #bgimg {
+            background-image: url(./img/cafe.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: none;
+        }
+    </style>
+</head>
+<!-- https://www.w3schools.com/w3css/tryw3css_templates_restaurant_modal.htm -->
+<body id="bgimg">
+    <div class="d-flex flex-column justify-content-between p-4" id="b-box">
+        <header class="align-self-start flex-column">
+            <div class="d-flex flex-column m-3">
+                <button class="btn btn-dark rounded-0 text-white mb-3" type="button" data-toggle="modal" data-target="#modal1">menu</button>
+                <button class="btn btn-dark rounded-0 text-white" type="button" data-toggle="modal" data-target="#modal33">contact</button>
+            </div>
+            
+                <div class="modal fade" id="modal1">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content" style="width: 1000px;">
+                            <div class="modal-header bg-dark text-white rounded-0">
+                                <h4>Starters</h4>
+                                <button type="button" class="close text-white" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                               <p>Tomato Soup $2.50</p>
+                               <p>Chicken Salad $3.50</p> 
+                               <p>Bread and Butter $1.00</p>
+                            </div>
+                            <div class="modal-header bg-dark text-white rounded-0">
+                                <h4>Main Courses</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p>Grilled Fish and Potatoes $8.50</p>
+                                <p>Italian Pizza $5.50</p> 
+                                <p>Veggie Pasta $4.00</p>
+                                <p>Chicken and Potatoes $6.50</p>
+                                <p>Deluxe Burger $5.00</p>
+                            </div>
+                            <div class="modal-header bg-dark text-white rounded-0">
+                                <h4>Desserts</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p>Fruit Salad $2.50</p>
+                                <p>Ice cream $2.00</p> 
+                                <p>Chocolate Cake $4.00</p>
+                                <p>Cheese $5.50</p>
+                            </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="modal33">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header bg-dark">
+                                <h4>메뉴</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+        </header>
+        <main class="text-white align-self-center mt-auto">
+            <h1 class="display-3">logo</h1>
+        </main>
+        <footer class="text-white align-self-start mt-auto">
+            <h4>monday - friday 10-23 | saturday 14-02</h4>
+            <h5>42 village St, New York</h5>
+            <p class="m-0">powered by w3.css</p>
+        </footer>
+    </div>
+    
+</body>
+</html>
